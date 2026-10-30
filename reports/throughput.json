@@ -1,0 +1,199 @@
+{
+  "interpretation": "Behavioral scheduler with assumed latency/II. Not measured RTL or CPU throughput.",
+  "latency_origin": "accepted input SOP to output SOP/EOP valid; no backpressure",
+  "seed": 20261030,
+  "scenarios": {
+    "clean": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 8992,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      }
+    },
+    "eight_errors": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 8992,
+          "cw_failed": 0
+        }
+      }
+    },
+    "failure": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 8992
+        }
+      }
+    },
+    "mixed": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 3000,
+          "cw_corrected": 3000,
+          "cw_failed": 2992
+        }
+      }
+    }
+  }
+}

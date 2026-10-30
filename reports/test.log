@@ -1,0 +1,226 @@
+/workspace/.venvs/gpt_test/bin/python -m unittest discover -s tests -v
+test_beyond_radius_and_miscorrection (test_codec.Mathematics.test_beyond_radius_and_miscorrection) ... ok
+test_boundaries_and_batches (test_codec.Mathematics.test_boundaries_and_batches) ... ok
+test_field_exhaustive (test_codec.Mathematics.test_field_exhaustive) ... ok
+test_generator_vectors (test_codec.Mathematics.test_generator_vectors) ... ok
+test_invalid_inputs (test_codec.Mathematics.test_invalid_inputs) ... ok
+test_random_encoders_1000 (test_codec.Mathematics.test_random_encoders_1000) ... ok
+test_random_errors_0_to_8 (test_codec.Mathematics.test_random_errors_0_to_8) ... ok
+test_single_error_all_65025 (test_codec.Mathematics.test_single_error_all_65025) ... ok
+test_duplex_random_flow (test_stream.Streaming.test_duplex_random_flow) ... ok
+test_layout (test_stream.Streaming.test_layout) ... ok
+test_one_lane_and_budget (test_stream.Streaming.test_one_lane_and_budget) ... ok
+test_protocol_monitor (test_stream.Streaming.test_protocol_monitor) ... ok
+test_reset_phases (test_stream.Streaming.test_reset_phases) ... ok
+test_stats_clear_saturation_and_stalled_tail (test_stream.Streaming.test_stats_clear_saturation_and_stalled_tail) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 8.503s
+
+OK
+BEYOND_RADIUS {"clean": 0, "corrected": 0, "failed": 192} constructed clean=1 miscorrected=1
+VECTOR 00000000000000000000000000000000 80bd5cb5a9ca35dcdea1d59b5f1778f4114f6215af38004a02a99a1d37383648
+VECTOR 3d4a1daccc4a4caa43488e7b4f6559c4 030d0337e148bdd5727b7f52c9ff4d347bb1835950210de99ca414d9c3ee1105
+VECTOR 3b0d68bd44d11e08a34129e56232243b 96ac9f865e4cd68c74b491da8306c63cd62f3162616d353ed2fecc45e7f6669a
+VECTOR a90116b0fa8bd4b22148bc0c8cde891a 385f462a3dd3a17df4b1b72fa5fa3ebeb3f9d30d7feb844f82e4baf1739f3fca
+VECTOR eb907407d6ef1d98386c111f5aa16e84 3d05ccab5f1bf8763adde771e38508bf09456fa10845a05f2345923fc809465d
+/workspace/.venvs/gpt_test/bin/python -m tools.throughput
+{
+  "interpretation": "Behavioral scheduler with assumed latency/II. Not measured RTL or CPU throughput.",
+  "latency_origin": "accepted input SOP to output SOP/EOP valid; no backpressure",
+  "seed": 20261030,
+  "scenarios": {
+    "clean": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 8992,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      }
+    },
+    "eight_errors": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 8992,
+          "cw_failed": 0
+        }
+      }
+    },
+    "failure": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 8992
+        }
+      }
+    },
+    "mixed": {
+      "tx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2126144,
+        "output_bytes": 2268480,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 849.7777777777778,
+        "output_effective_gbps": 906.6666666666666,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          16
+        ],
+        "tail_output_latency_cycles": [
+          23
+        ],
+        "status_totals": {
+          "cw_clean": 0,
+          "cw_corrected": 0,
+          "cw_failed": 0
+        }
+      },
+      "rx": {
+        "cw_in": 8896,
+        "cw_out": 8896,
+        "input_bytes": 2268480,
+        "output_bytes": 2126144,
+        "steady_cycles": 10008,
+        "assumed_clock_mhz": 500,
+        "ii_cycles": 9,
+        "input_effective_gbps": 906.6666666666666,
+        "output_effective_gbps": 849.7777777777778,
+        "information_gbps": 849.7777777777778,
+        "first_output_latency_cycles": [
+          48
+        ],
+        "tail_output_latency_cycles": [
+          55
+        ],
+        "status_totals": {
+          "cw_clean": 3000,
+          "cw_corrected": 3000,
+          "cw_failed": 2992
+        }
+      }
+    }
+  }
+}
